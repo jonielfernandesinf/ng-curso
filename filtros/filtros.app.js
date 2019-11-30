@@ -1,6 +1,7 @@
 angular
     .module('filtrosApp', [])
-    .filter('cpf', formatarCPF);
+    .filter('cpf', formatarCPF)
+    .filter('adicionaMeuNome', adicionarMeuNome);
 
 function formatarCPF() {
     return function (input) {
@@ -12,5 +13,11 @@ function formatarCPF() {
             str = str.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
         }
         return str;
+    };
+}
+
+function adicionarMeuNome() {
+    return function (input) {
+        return input + 'Joniel Fernandes Santos';
     };
 }

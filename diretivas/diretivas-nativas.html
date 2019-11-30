@@ -1,0 +1,19 @@
+<!doctype html>
+<html ng-app="diretivasNativasApp">
+    <meta charset="utf-8">
+
+    <head>
+        <title>Filtros</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+        <script src="diretivas-nativas.app.js"></script>
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+    </head>
+
+    <body ng-controller="DiretivasNativasController">
+        <div ng-class="valoresDiv.estiloVermelho">{{ valoresDiv.descricaoInterna }}</div>
+        <br/>
+        <button ng-click="aplicarVermelho()">Aplicar vermelho</button>
+        <button ng-click="retirarVermelho()">Retirar vermelho</button>
+        <button ng-click="alternarVermelho()">Alternar</button>
+    </body>
+</html>

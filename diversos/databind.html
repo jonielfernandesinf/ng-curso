@@ -1,0 +1,22 @@
+<!doctype html>
+<html ng-app="appDatabind">
+<meta charset="utf-8">
+
+<head>
+    <title>Controladores</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <script src="../filtros/filtros.app.js"></script>
+    <script src="databind-controller.js"></script>
+</head>
+
+<body ng-controller="DatabindController">
+    <input type="radio" name="opcoes" ng-model="valor" value="1">
+    <input type="radio" name="opcoes" ng-model="valor" value="2">
+    <input type="radio" name="opcoes" ng-model="valor" value="3">
+    <br />
+    O valor selecionado foi: {{ valor }}.
+
+    <h1>{{'Adicionando meu nome: ' | adicionaMeuNome}}</h1>
+</body>
+
+</html>
